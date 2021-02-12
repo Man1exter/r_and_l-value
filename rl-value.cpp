@@ -24,9 +24,9 @@ void f(vector<int>& coll, int&& a, int& b, const int& c){
 
     coll.push_back(c);
 
-    cout << a << endl;
+    cout << "podwojne && czyli 10 * 2 -> a: "<<a << endl;
     cout << "po zmianie wartsoci b: " << b << endl;
-    cout << c << endl;
+    cout << "stala wartosc c: "<<c << endl;
 }
 
 
