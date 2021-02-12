@@ -13,8 +13,25 @@
 
 using namespace std;
 
+
+void f(vector<int>& coll, int&& a, int& b, const int& c){
+    coll.push_back(a);
+    coll.push_back(b);
+    coll.push_back(c);
+}
+
+
 int main(){
 
+vector<int>v{};
+int a1,a2;
+a1 = a2 = 10;
+
+f(v,a1+a2,a1,a2);
+printSTL(v , "," , true);
+
+cout << a1 << endl;
+cout << a2 << endl;
 
     return 0;
 }
